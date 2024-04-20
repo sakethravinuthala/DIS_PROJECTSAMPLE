@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoDriveRentals Locations</title>
+</head>
+<body>
+    <h2>GoDriveRentals Locations</h2>
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1Csz0kR40RXQEFZRgsMfY35ouG0X5L0g&ehbc=2E312F&noprof=1" width="1280" height="520"></iframe>
+</body>
+</html>
