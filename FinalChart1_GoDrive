@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Chart.js examples</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Average Customer Ratings of Different Class of Cars in Florida State(Apr'23-Mar'24),(On scale of 10)</h2>
+
+    <!-- Corrected canvas ID -->
+    <canvas id="barchart1" width="300" height="110"></canvas>
+
+    <script>
+        new Chart(document.getElementById("barchart1"), {
+            type: 'bar',
+            data: {
+                labels: ["Miami", "Orlando", "Tampa", "Tallahasse", "Sarasota", "St.Petersburg"],
+                datasets: [
+                    {
+                        label: "SUV",
+                        backgroundColor: "#3cba9f",
+                        data: [9, 9.1, 8.9, 8.8, 7.6, 9.3]
+                    }, {
+                        label: "Sedan",
+                        backgroundColor: "#c45850",
+                        data: [8.6, 9.3, 9.1, 9.2, 9, 8.8]
+                    }, {
+                        label: "Mini",
+                        backgroundColor: "#e8c3b9",
+                        data: [7.8, 8.7, 9, 8.9, 8.5, 9.4]
+                    }
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Average Customer Ratings of Different Class of Cars in Florida State (On a scale of 10)'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
