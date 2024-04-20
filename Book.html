@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #273f44;
+            background-image: url('https://images.unsplash.com/photo-1590656371803-0ae2ae004989?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Add other background properties as needed */
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa; /* Change the background color as needed */
+            padding: 20px 0; /* Adjust padding as needed */
+            text-align: center; /* Center-align the content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light " style="background-color: #273f44;">
+        <a href="#" class="navbar-brand">
+            <style>
+                .navbar-brand {
+                    color: #ffffff; /* Change color to white */
+                    font-size: 24px; /* Adjust font size */
+                    font-style: italic
+                    /* Add any other styling properties you want */
+                }
+            </style>
+
+        </a><a href="#" class="navbar-brand">
+            GoDrive Rentals
+        </a>
+
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+
+            </div>
+
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="index.html" class="nav-item nav-link" style="color: black;">Home</a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="#" class="nav-item nav-link"></a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="book.html" class="nav-item nav-link" style="color: black;">Book Now</a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="#" class="nav-item nav-link"></a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="#abo" class="nav-item nav-link" style="color: black;">About Us</a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="#" class="nav-item nav-link"></a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="#con" class="nav-item nav-link" style="color: black;">Contact Us</a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="#" class="nav-item nav-link"></a></b>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-item nav-link"></a>
+                    <b><a href="Register.html" class="nav-item nav-link" style="color: black;">Sign Up</a></b>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Car Rental Form -->
+    <div class="container">
+        <h2>Car Rental Form</h2>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="carType">Car Type</label>
+                        <select class="form-control" id="carType">
+                            <option value="">Select Car Type</option>
+                            <!-- Replace 'Car1', 'Car2', etc. with your actual car types -->
+                            <option value="Car1">SUV</option>
+                            <option value="Car2">Sedan</option>
+                            <option value="Car3">Mini</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="frequency">Frequency</label>
+                        <select class="form-control" id="frequency">
+                            <option value="">Select Frequency</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                            <option value="daily">Daily</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" class="form-control" id="year" placeholder="Enter Year">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="dateInput">From:</label>
+                        <input type="date" class="form-control" id="dateInput">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="dateInput">To:</label>
+                        <input type="date" class="form-control" id="dateInput">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <input type="number" class="form-control" id="rate" placeholder="Enter Rate">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" id="price" placeholder="Enter Price">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Book</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Contact us at info@carrental.com or follow us on social media.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
